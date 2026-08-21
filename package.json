@@ -15,7 +15,7 @@
   "type": "commonjs",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "tailwindcss -i ./assets/css/code.css -o ./assets/css/style.css --watch"
   },
   "dependencies": {
     "@tailwindcss/cli": "^4.3.3",
