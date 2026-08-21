@@ -1,72 +1,387 @@
 <!DOCTYPE html>
-<html lang="es">
-    <head>
-        <meta charset="UTF-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>CV Renato Troncoso</title>
-        <link href="./assets/css/style.css" rel="stylesheet">
-    </head>
-    <div class="inline-flex">
-        <nav>
-            <button
-                class="rounded-s-sm border border-gray-200 px-3 py-2 font-medium text-gray-700 transition-colors hover:bg-gray-50 hover:text-gray-900 focus:z-10 focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:ring-offset-white focus:outline-none disabled:pointer-events-auto disabled:opacity-50"
-            >
-                <a href="#CV">CV</a>
-            </button>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-            <button
-                class="-ms-px border border-gray-200 px-3 py-2 font-medium text-gray-700 transition-colors hover:bg-gray-50 hover:text-gray-900 focus:z-10 focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:ring-offset-white focus:outline-none disabled:pointer-events-auto disabled:opacity-50"
-            >
-                <a href="#PORTAFOLIO">Portafolio</a>
-            </button>
+    <title>CV Renato Troncoso</title>
 
-            <button
-                class="-ms-px rounded-e-sm border border-gray-200 px-3 py-2 font-medium text-gray-700 transition-colors hover:bg-gray-50 hover:text-gray-900 focus:z-10 focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:ring-offset-white focus:outline-none disabled:pointer-events-auto disabled:opacity-50"
-            >
-                <a href="#CONTACTO">Contacto</a>
-            </button>
-        </nav>
-    </div>
-    <body>
-        <header>
-            <h1>CV Renato Troncoso</h1>
-            <nav>
-                <a href="#CV">CV</a>
-                <a href="#PORTAFOLIO">Portafolio</a>
-                <a href="#CONTACTO">Contacto</a>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+            darkMode: 'class'
+        }
+    </script>
+</head>
+
+<body class="bg-slate-950 text-slate-100">
+
+    <!-- NAVBAR -->
+    <header class="sticky top-0 z-50 border-b border-slate-800 bg-slate-950/90 backdrop-blur">
+        <div class="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
+
+            <a href="#CV"
+               class="text-xl font-bold text-white">
+                Renato Troncoso
+            </a>
+
+            <nav class="hidden gap-2 sm:flex">
+
+                <a href="#CV"
+                   class="rounded-lg px-4 py-2 text-sm font-medium text-slate-300 transition hover:bg-blue-600 hover:text-white">
+                    CV
+                </a>
+
+                <a href="#PORTAFOLIO"
+                   class="rounded-lg px-4 py-2 text-sm font-medium text-slate-300 transition hover:bg-blue-600 hover:text-white">
+                    Portafolio
+                </a>
+
+                <a href="#CONTACTO"
+                   class="rounded-lg px-4 py-2 text-sm font-medium text-slate-300 transition hover:bg-blue-600 hover:text-white">
+                    Contacto
+                </a>
+
             </nav>
-        </header>
-        <div class="flex -space-x-1 overflow-hidden">
-            <img src="./assets/images/0d5d9d550abc15ef777defbed4479e00.jpg" alt="" 
-            class="inline-block size-48 rounded-full ring-10 ring-white outline 
-            -outline-offset-5 outline-black/5" />
+        </div>
+    </header>
+
+
+    <main>
+
+        <section id="CV"
+                 class="mx-auto flex min-h-[calc(100vh-73px)] max-w-6xl flex-col items-center justify-center gap-12 px-6 py-20 md:flex-row">
+            <div class="relative">
+
+                <div class="absolute -inset-4 rounded-full bg-blue-600/20 blur-2xl"></div>
+
+                <img
+                    src="./assets/images/0d5d9d550abc15ef777defbed4479e00.jpg"
+                    alt="Foto de Renato Troncoso"
+                    class="relative h-56 w-56 rounded-full border-4 border-blue-500 object-cover shadow-2xl shadow-blue-500/20 md:h-72 md:w-72"
+                >
+
+            </div>
+            <div class="max-w-2xl text-center md:text-left">
+
+                <p class="mb-3 text-sm font-semibold uppercase tracking-[0.3em] text-blue-400">
+                    Estudiante de Ingeniería en Informática
+                </p>
+
+                <h1 class="text-4xl font-extrabold tracking-tight text-white sm:text-5xl md:text-6xl">
+                    Renato
+                    <span class="text-blue-500">Troncoso</span>
+                </h1>
+
+                <p class="mt-6 text-lg leading-8 text-slate-400">
+                    Estudiante de Ingeniería en Informática cursando el cuarto semestre,
+                    interesado en el desarrollo web, programación y creación de
+                    soluciones tecnológicas.
+                </p>
+
+                <div class="mt-8 flex flex-col justify-center gap-4 sm:flex-row md:justify-start">
+
+                    <a href="#PORTAFOLIO"
+                       class="rounded-xl bg-blue-600 px-6 py-3 font-semibold text-white shadow-lg shadow-blue-600/20 transition hover:bg-blue-500">
+                        Ver portafolio
+                    </a>
+
+                    <a href="#CONTACTO"
+                       class="rounded-xl border border-slate-700 bg-slate-900 px-6 py-3 font-semibold text-slate-200 transition hover:border-blue-500 hover:text-blue-400">
+                        Contactarme
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="border-y border-slate-800 bg-slate-900/50">
+
+            <div class="mx-auto max-w-6xl px-6 py-20">
+
+                <div class="mb-12 text-center">
+
+                    <p class="text-sm font-semibold uppercase tracking-widest text-blue-400">
+                        Sobre mí
+                    </p>
+
+                    <h2 class="mt-2 text-3xl font-bold text-white">
+                        Tecnologías y experiencia
+                    </h2>
+
+                </div>
+
+
+                <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+
+                    <article class="rounded-2xl border border-slate-800 bg-slate-950 p-6 transition hover:-translate-y-1 hover:border-blue-500">
+
+                        <div class="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-blue-600/10 text-2xl">
+                            🌐
+                        </div>
+
+                        <h3 class="text-xl font-bold text-white">
+                            Desarrollo Web
+                        </h3>
+
+                        <p class="mt-3 leading-7 text-slate-400">
+                            Desarrollo de páginas y aplicaciones web utilizando
+                            tecnologías modernas.
+                        </p>
+
+                    </article>
+
+
+                    
+                    <article class="rounded-2xl border border-slate-800 bg-slate-950 p-6 transition hover:-translate-y-1 hover:border-blue-500">
+
+                        <div class="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-green-600/10 text-2xl">
+                            📱
+                        </div>
+
+                        <h3 class="text-xl font-bold text-white">
+                            Ionic
+                        </h3>
+
+                        <p class="mt-3 leading-7 text-slate-400">
+                            Creación de aplicaciones y proyectos utilizando
+                            Ionic.
+                        </p>
+
+                    </article>
+
+
+                    <!-- CARD 3 -->
+                    <article class="rounded-2xl border border-slate-800 bg-slate-950 p-6 transition hover:-translate-y-1 hover:border-blue-500">
+
+                        <div class="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-yellow-600/10 text-2xl">
+                            🐍
+                        </div>
+
+                        <h3 class="text-xl font-bold text-white">
+                            Python
+                        </h3>
+
+                        <p class="mt-3 leading-7 text-slate-400">
+                            Desarrollo de programas y aplicaciones básicas
+                            utilizando Python.
+                        </p>
+
+                    </article>
+
+
+                    <!-- CARD 4 -->
+                    <article class="rounded-2xl border border-slate-800 bg-slate-950 p-6 transition hover:-translate-y-1 hover:border-blue-500">
+
+                        <div class="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-purple-600/10 text-2xl">
+                            ☕
+                        </div>
+
+                        <h3 class="text-xl font-bold text-white">
+                            Java
+                        </h3>
+
+                        <p class="mt-3 leading-7 text-slate-400">
+                            Programación orientada a objetos y desarrollo
+                            de aplicaciones básicas.
+                        </p>
+
+                    </article>
+
+
+                    <!-- CARD 5 -->
+                    <article class="rounded-2xl border border-slate-800 bg-slate-950 p-6 transition hover:-translate-y-1 hover:border-blue-500">
+
+                        <div class="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-cyan-600/10 text-2xl">
+                            ⚙️
+                        </div>
+
+                        <h3 class="text-xl font-bold text-white">
+                            Spring Boot
+                        </h3>
+
+                        <p class="mt-3 leading-7 text-slate-400">
+                            Desarrollo de microservicios utilizando
+                            Spring Boot.
+                        </p>
+
+                    </article>
+
+
+                    <!-- CARD 6 -->
+                    <article class="rounded-2xl border border-slate-800 bg-slate-950 p-6 transition hover:-translate-y-1 hover:border-blue-500">
+
+                        <div class="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-orange-600/10 text-2xl">
+                            💻
+                        </div>
+
+                        <h3 class="text-xl font-bold text-white">
+                            C++
+                        </h3>
+
+                        <p class="mt-3 leading-7 text-slate-400">
+                            Desarrollo de programas y ejercicios de
+                            programación.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+        
+        <section id="PORTAFOLIO"
+                 class="mx-auto max-w-6xl px-6 py-24">
+
+            <div class="mb-12 text-center">
+
+                <p class="text-sm font-semibold uppercase tracking-widest text-blue-400">
+                    Proyectos
+                </p>
+
+                <h2 class="mt-2 text-3xl font-bold text-white">
+                    Mi Portafolio
+                </h2>
+
+                <p class="mx-auto mt-4 max-w-2xl text-slate-400">
+                    Algunos de los proyectos y tecnologías que he trabajado
+                    durante mi formación.
+                </p>
+
+            </div>
+
+
+            <div class="grid gap-6 md:grid-cols-2">
+
+                <article class="group rounded-2xl border border-slate-800 bg-slate-900 p-8 transition hover:border-blue-500">
+
+                    <span class="text-sm font-semibold text-blue-400">
+                        Proyecto 01
+                    </span>
+
+                    <h3 class="mt-3 text-2xl font-bold text-white">
+                        Aplicación Web
+                    </h3>
+
+                    <p class="mt-4 leading-7 text-slate-400">
+                        Proyecto desarrollado utilizando tecnologías web,
+                        orientado a la creación de una aplicación funcional.
+                    </p>
+
+                    <div class="mt-6 flex flex-wrap gap-2">
+
+                        <span class="rounded-full bg-blue-500/10 px-3 py-1 text-sm text-blue-400">
+                            HTML
+                        </span>
+
+                        <span class="rounded-full bg-blue-500/10 px-3 py-1 text-sm text-blue-400">
+                            CSS
+                        </span>
+
+                        <span class="rounded-full bg-blue-500/10 px-3 py-1 text-sm text-blue-400">
+                            Ionic
+                        </span>
+
+                    </div>
+
+                </article>
+
+
+                <article class="group rounded-2xl border border-slate-800 bg-slate-900 p-8 transition hover:border-green-500">
+
+                    <span class="text-sm font-semibold text-green-400">
+                        Proyecto 02
+                    </span>
+
+                    <h3 class="mt-3 text-2xl font-bold text-white">
+                        Microservicios
+                    </h3>
+
+                    <p class="mt-4 leading-7 text-slate-400">
+                        Desarrollo de servicios utilizando Java y Spring Boot,
+                        aplicando conceptos de arquitectura de microservicios.
+                    </p>
+
+                    <div class="mt-6 flex flex-wrap gap-2">
+
+                        <span class="rounded-full bg-green-500/10 px-3 py-1 text-sm text-green-400">
+                            Java
+                        </span>
+
+                        <span class="rounded-full bg-green-500/10 px-3 py-1 text-sm text-green-400">
+                            Spring Boot
+                        </span>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- CONTACTO -->
+        <section id="CONTACTO"
+                 class="border-t border-slate-800 bg-slate-900">
+
+            <div class="mx-auto max-w-4xl px-6 py-24 text-center">
+
+                <p class="text-sm font-semibold uppercase tracking-widest text-blue-400">
+                    Contacto
+                </p>
+
+                <h2 class="mt-3 text-4xl font-bold text-white">
+                    ¿Quieres contactarme?
+                </h2>
+
+                <p class="mx-auto mt-4 max-w-xl text-slate-400">
+                    Puedes comunicarte conmigo mediante teléfono o correo
+                    electrónico.
+                </p>
+
+
+                <div class="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
+
+                    <a href="tel:+56971240753"
+                       class="flex w-full items-center justify-center gap-3 rounded-xl bg-blue-600 px-6 py-4 font-semibold text-white transition hover:bg-blue-500 sm:w-auto">
+                        📱
+                        +56 9 7124 0753
+                    </a>
+
+                    <a href="mailto:renato.troncoso.latorre@gmail.com"
+                       class="flex w-full items-center justify-center gap-3 rounded-xl border border-slate-700 px-6 py-4 font-semibold text-slate-200 transition hover:border-blue-500 hover:text-blue-400 sm:w-auto">
+                        ✉️
+                        rena.tronocoso@duocuc.cl
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="border-t border-slate-800 bg-slate-950">
+
+        <div class="mx-auto max-w-6xl px-6 py-8 text-center">
+
+            <p class="text-sm text-slate-500">
+                © 2026 Renato Troncoso. Todos los derechos reservados.
+            </p>
+
         </div>
 
+    </footer>
 
-
-        <section id="CV">
-        </section>
-        <section id="PORTAFOLIO">
-            <footer>
-                <p><small>Renato Troncoso, Todos los derechos reservados</small></p>
-                <br/>
-                <p>
-                    Soy estudiante de ingenieria en informatica cursando el cuarto semestre.<br/>
-                    He realizado paginas web con ionic y djnago,<br/>
-                    tambien he creado programas basicos de caculos<br/>
-                    con los lenguajes c++,python y java,<br/>
-                    micro-servicios basados en la librerias de springboot.
-                </p>
-        </section>
-        <section id="CONTACTO">
-                <br/>
-                Contacto:
-                <a href="tel:+56971240753">Telefono</a>
-                <br/>
-                Gmail:
-                <a href="mailto:usuario@gmail.com">renato.troncoso.latorre@gmail.com</a>
-            </footer>
-        </section>
-    </body>
-
+</body>
 </html>
